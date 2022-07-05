@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GerenciarClientes">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" style="-fx-background-color: black;">
+
+        <Hyperlink layoutX="700.0" layoutY="65.0" onAction="#cadastrarCliente" styleClass="linkMenu" text="Cadastrar Cliente" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+        <Hyperlink layoutX="1044.0" layoutY="65.0" onAction="#voltar" styleClass="linkMenu" text="Voltar" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+        <TextField fx:id="tfPesquisarClientes" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar Clientes" styleClass="tfPesquisa">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </TextField>
+
+    </Pane>
+
+    <ListView fx:id="listViewClientes" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0" />
+   <Group layoutX="709.0" layoutY="571.0">
+      <children>
+      
+          <Button mnemonicParsing="false" text="Excluir" onAction="#excluirCliente">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+      
+          <Button layoutX="198.0" mnemonicParsing="false" text="Editar" onAction="#editarCliente">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+      </children>
+   </Group>
+   <Pane layoutX="672.0" layoutY="273.0" prefHeight="248.0" prefWidth="364.0">
+      <children>
+         <Label fx:id="labelNomeClienteSelecionado" layoutX="25.0" layoutY="28.0" />
+         <Label fx:id="labelEmailClienteSelecionado" layoutX="25.0" layoutY="74.0" />
+         <Label fx:id="labelCidadeClienteSelecionado" layoutX="25.0" layoutY="116.0" />
+         <Label fx:id="labelUfClienteSelecionado" layoutX="25.0" layoutY="157.0" />
+         <Label fx:id="labelCepClienteSelecionado" layoutX="25.0" layoutY="201.0" />
+      </children>
+   </Pane>
+
+
+</AnchorPane>

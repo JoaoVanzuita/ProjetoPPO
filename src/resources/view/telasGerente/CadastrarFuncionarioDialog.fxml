@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label layoutX="155.0" layoutY="61.0" text="Funcionário">
+        <font>
+            <Font size="36.0" />
+        </font>
+    </Label>
+
+    <Group layoutX="166.0" layoutY="300.0">
+
+        <Button mnemonicParsing="false" text="Salvar" onAction="#salvar">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+
+        <Hyperlink layoutX="105.0" layoutY="8.0" text="Voltar" onAction="#voltar">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+    </Group>
+
+    <Button layoutX="325.0" layoutY="175.0" mnemonicParsing="false" text="Endereço" onAction="#endereco">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Button>
+
+    <TextField fx:id="tfNomeCadastrarFuncionario" layoutX="69.0" layoutY="150.0" promptText="Nome" />
+    <TextField fx:id="tfEmailCadastrarFuncionario" layoutX="69.0" layoutY="226.0" promptText="Email" />
+
+</AnchorPane>
