@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.global.Login">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" style="-fx-background-color: black;">
+
+        <Label styleClass="labelPrincipalMenu" alignment="CENTER" contentDisplay="CENTER" prefHeight="160.0" prefWidth="1200.0" text="LOGIN"
+               textFill="WHITE">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+
+    </Pane>
+
+    <Button layoutX="553.0" layoutY="610.0" mnemonicParsing="false" onAction="#entrar" text="Entrar">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Button>
+
+    <TextField fx:id="tfEmail" layoutX="526.0" layoutY="408.0" promptText="Email"/>
+    <PasswordField fx:id="pfSenha" layoutX="526.0" layoutY="484.0" promptText="Senha"/>
+
+</AnchorPane>

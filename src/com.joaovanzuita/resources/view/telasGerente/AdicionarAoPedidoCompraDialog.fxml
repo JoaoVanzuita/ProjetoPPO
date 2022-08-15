@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane layoutX="263.0" layoutY="32.0" prefHeight="248.0" prefWidth="291.0">
+
+        <Label fx:id="labelNomeProduto" layoutX="60.0" layoutY="29.0" />
+        <Label fx:id="labelCategoriaProduto" layoutX="78.0" layoutY="75.0" />
+        <Label fx:id="labelPrecoDeVendaProduto" layoutX="109.0" layoutY="118.0" />
+        <Label fx:id="labelPrecoDeCustoProduto" layoutX="106.0" layoutY="152.0" />
+        <Label fx:id="labelQuantidadeProduto" layoutX="90.0" layoutY="187.0" />
+
+        <Label layoutX="14.0" layoutY="29.0" text="Nome: " />
+        <Label layoutX="14.0" layoutY="75.0" text="Categoria: " />
+        <Label layoutX="14.0" layoutY="118.0" text="Preço de venda: " />
+        <Label layoutX="14.0" layoutY="152.0" text="Preço de custo:" />
+        <Label layoutX="14.0" layoutY="187.0" text="Quantidade: " />
+
+    </Pane>
+
+    <Group layoutX="166.0" layoutY="300.0">
+
+        <Button layoutX="10.0" layoutY="3.0" mnemonicParsing="false" onAction="#adicionar" text="Adicionar">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+
+        <Hyperlink layoutX="154.0" layoutY="9.0" onAction="#voltar" text="Voltar">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+    </Group>
+
+   <TextField fx:id="tfValorUnitario" layoutX="61.0" layoutY="124.0" promptText="Valor unitário (R$)" />
+   <TextField fx:id="tfQuantidade" layoutX="61.0" layoutY="188.0" promptText="Quantidade" />
+
+</AnchorPane>

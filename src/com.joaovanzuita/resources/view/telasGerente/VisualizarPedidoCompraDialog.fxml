@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="listViewItensNFEntrada" layoutX="36.0" layoutY="80.0" prefHeight="278.0" prefWidth="242.0" />
+      <Label layoutX="258.0" layoutY="33.0" text="PEDIDO">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+
+      <Button layoutX="350.0" layoutY="223.0" mnemonicParsing="false" onAction="#excluirItem" text="Excluir item">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+
+      <Hyperlink layoutX="388.0" layoutY="300.0" onAction="#voltar" text="Voltar">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Hyperlink>
+
+      <Label layoutX="350.0" layoutY="152.0" text="Valor total:" />
+      <Label fx:id="labelValorTotal" layoutX="418.0" layoutY="152.0" />
+
+   </children>
+</AnchorPane>

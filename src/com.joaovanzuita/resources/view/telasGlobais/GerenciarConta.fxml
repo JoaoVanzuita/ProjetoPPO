@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" style="-fx-background-color: black;">
+
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="160.0" prefWidth="1200.0" styleClass="labelPrincipalMenu" text="GERENCIAR CONTA" textFill="WHITE">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+
+    </Pane>
+
+   <TextField fx:id="tfNomeUsuario" layoutX="309.0" layoutY="344.0" promptText="Nome"/>
+    <TextField fx:id="tfEmailUsuario" layoutX="309.0" layoutY="440.0" promptText="Email"/>
+    <PasswordField fx:id="pfSenhaUsuario" layoutX="309.0" layoutY="527.0" promptText="Senha"/>
+
+    <Button layoutX="694.0" layoutY="397.0" mnemonicParsing="false" onAction="#endereco" text="Endereço">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Button>
+
+   <Group layoutX="669.0" layoutY="508.0">
+      <children>
+          <Button mnemonicParsing="false" onAction="#salvar" text="Salvar">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+          <Hyperlink layoutX="104.0" layoutY="1.0" onAction="#voltar" text="Voltar">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Hyperlink>
+      </children>
+   </Group>
+
+</AnchorPane>

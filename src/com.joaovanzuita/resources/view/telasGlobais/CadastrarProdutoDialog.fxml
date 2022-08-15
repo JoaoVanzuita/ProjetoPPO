@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Button layoutX="205.0" layoutY="464.0" mnemonicParsing="false" onAction="#salvarProduto" text="Salvar">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Button>
+
+    <Hyperlink layoutX="310.0" layoutY="472.0" onAction="#voltar" styleClass="link" text="Voltar">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Hyperlink>
+
+    <Group layoutX="66.0" layoutY="217.0">
+
+        <ListView fx:id="listViewCategoriasProduto" prefHeight="200.0" prefWidth="200.0"/>
+
+        <ListView fx:id="listViewFornecedoresProduto" layoutX="268.0" prefHeight="200.0" prefWidth="200.0"/>
+
+    </Group>
+
+   <Label layoutX="137.0" layoutY="149.0" text="Categoria" />
+   <Label layoutX="401.0" layoutY="149.0" text="Fornecedor" />
+
+   <TextField fx:id="tfNomeProduto" layoutX="89.0" layoutY="70.0" promptText="Nome"/>
+   <TextField fx:id="tfPrecoDeCustoProduto" layoutX="357.0" layoutY="70.0" promptText="Preço de custo (R$)"/>
+
+</AnchorPane>

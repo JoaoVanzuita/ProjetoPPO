@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" style="-fx-background-color: black;">
+
+        <Hyperlink layoutX="700.0" layoutY="65.0" onAction="#visualizarPedido" styleClass="linkMenu" text="Visualizar pedido" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+        <Hyperlink layoutX="1044.0" layoutY="65.0" onAction="#voltar" styleClass="linkMenu" text="Voltar" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+        <TextField fx:id="tfPesquisarProduto" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar produto" styleClass="tfPesquisa">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </TextField>
+
+    </Pane>
+
+    <ListView fx:id="listViewProdutos" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0" />
+    <Group layoutX="672.0" layoutY="567.0">
+
+        <Button maxWidth="149.0" mnemonicParsing="false" onAction="#adicionarAoPedido" prefHeight="92.0" prefWidth="149.0" text="Adicionar ao pedido" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="198.0" mnemonicParsing="false" onAction="#concluirPedido" prefHeight="95.0" prefWidth="139.0" text="Finalizar pedido" wrapText="true">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+
+    </Group>
+    <Pane layoutX="661.0" layoutY="284.0" prefHeight="230.0" prefWidth="364.0">
+
+        <Label fx:id="labelNomeProdutoSelecionado" layoutX="60.0" layoutY="29.0" />
+        <Label fx:id="labelCategoriaProdutoSelecionado" layoutX="78.0" layoutY="75.0" />
+        <Label fx:id="labelPrecoDeVendaProdutoSelecionado" layoutX="109.0" layoutY="118.0" />
+        <Label fx:id="labelPrecoDeCustoProdutoSelecionado" layoutX="106.0" layoutY="152.0" />
+        <Label fx:id="labelQuantidadeProdutoSelecionado" layoutX="91.0" layoutY="187.0" />
+
+        <Label layoutX="14.0" layoutY="29.0" text="Nome: " />
+        <Label layoutX="14.0" layoutY="75.0" text="Categoria: " />
+        <Label layoutX="14.0" layoutY="117.0" text="Preço de venda: " />
+        <Label layoutX="14.0" layoutY="152.0" text="Preço de custo: " />
+        <Label layoutX="14.0" layoutY="187.0" text="Quantidade: " />
+
+    </Pane>
+
+</AnchorPane>

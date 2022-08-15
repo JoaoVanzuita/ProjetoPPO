@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Label fx:id="tituloNFEntrada" layoutX="32.0" layoutY="11.0" text="Nota Fiscal de Saída - Número: ">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+
+    <Label layoutX="49.0" layoutY="160.0" text="Data:">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+
+    <Label fx:id="labelDataNFSaida" layoutX="103.0" layoutY="160.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+
+    </Label>
+
+    <Label layoutX="212.0" layoutY="160.0" text="Valor total: ">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+
+    <Label fx:id="labelValorTotalNFSaida" layoutX="320.0" layoutY="160.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+
+    <ListView fx:id="listViewItensNFSaida" layoutX="15.0" layoutY="209.0" prefHeight="317.0" prefWidth="421.0" />
+
+    <Group layoutX="87.0" layoutY="535.0">
+
+            <Hyperlink fx:id="linkVoltar" layoutX="163.0" layoutY="8.0" onAction="#voltar" text="Fechar">
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Hyperlink>
+
+            <Button layoutX="3.0" layoutY="4.0" mnemonicParsing="false" onAction="#gerarPdf" text="Gerar PDF">
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Button>
+
+    </Group>
+
+   <Label layoutX="49.0" layoutY="122.0" text="Cliente:">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+
+   <Label layoutX="49.0" layoutY="80.0" text="Vendedor(a):">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+
+   <Label fx:id="labelNomeVendedor" layoutX="172.0" layoutY="80.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+
+   <Label fx:id="labelNomeCliente" layoutX="125.0" layoutY="122.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

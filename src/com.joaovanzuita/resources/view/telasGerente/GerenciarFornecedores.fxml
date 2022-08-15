@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" >
+    <Pane prefHeight="160.0" prefWidth="1200.0" style="-fx-background-color: black;">
+
+        <Hyperlink layoutX="700.0" layoutY="65.0" onAction="#cadastrarFornecedor" styleClass="linkMenu" text="Cadastrar Fornecedor" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+        <Hyperlink layoutX="1044.0" layoutY="65.0" onAction="#voltar" styleClass="linkMenu" text="Voltar" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Hyperlink>
+
+        <TextField fx:id="tfPesquisarFornecedor" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar Fornecedor" styleClass="tfPesquisa">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </TextField>
+
+    </Pane>
+
+    <ListView fx:id="listViewFornecedores" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0" />
+    <Group layoutX="709.0" layoutY="571.0">
+        <children>
+
+            <Button mnemonicParsing="false" onAction="#excluirFornecedor" text="Excluir">
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Button>
+
+            <Button layoutX="198.0" mnemonicParsing="false" onAction="#editarFornecedor" text="Editar">
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Button>
+        </children>
+    </Group>
+    <Pane layoutX="672.0" layoutY="273.0" prefHeight="248.0" prefWidth="364.0">
+        <children>
+            <Label fx:id="labelNomeFornecedorSelecionado" layoutX="60.0" layoutY="29.0"/>
+            <Label fx:id="labelEmailFornecedorSelecionado" layoutX="55.0" layoutY="75.0"/>
+            <Label fx:id="labelCidadeFornecedorSelecionado" layoutX="65.0" layoutY="117.0" />
+            <Label fx:id="labelUfFornecedorSelecionado" layoutX="42.0" layoutY="158.0" />
+            <Label fx:id="labelCepFornecedorSelecionado" layoutX="48.0" layoutY="202.0" />
+            <Label layoutX="14.0" layoutY="29.0" text="Nome:" />
+            <Label layoutX="14.0" layoutY="75.0" text="Email:" />
+            <Label layoutX="14.0" layoutY="117.0" text="Cidade:" />
+            <Label layoutX="14.0" layoutY="158.0" text="UF:" />
+            <Label layoutX="14.0" layoutY="202.0" text="CEP:" />
+        </children>
+    </Pane>
+
+
+</AnchorPane>
