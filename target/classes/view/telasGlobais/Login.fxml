@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="738" prefWidth="1200" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.global.Login">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" styleClass="paneMenu">
+
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="160.0" prefWidth="1200.0" styleClass="labelPrincipalMenu" text="LOGIN" />
+
+    </Pane>
+
+    <TextField fx:id="tfEmail" layoutX="456.0" layoutY="351.0" promptText="Email" styleClass="input" />
+    <PasswordField fx:id="pfSenha" layoutX="456.0" layoutY="440.0" promptText="Senha" styleClass="input" />
+
+    <Button layoutX="548.0" layoutY="551.0" mnemonicParsing="false" onAction="#entrar" styleClass="buttonMain" text="Entrar" />
+
+</Pane>

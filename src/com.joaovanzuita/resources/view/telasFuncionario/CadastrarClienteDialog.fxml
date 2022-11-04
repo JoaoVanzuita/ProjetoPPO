@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="500.0" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="128.0" prefWidth="600.0" styleClass="paneMenu">
+
+        <Label layoutX="226.0" layoutY="38.0" styleClass="labelPrincipalMenu" text="Cliente" />
+
+    </Pane>
+
+    <Button layoutX="176.0" layoutY="345.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="122.0" styleClass="buttonMain" text="Salvar" />
+
+    <Hyperlink layoutX="320.0" layoutY="345.0" onAction="#voltar" prefHeight="23.0" prefWidth="104.0" styleClass="linkVoltar" text="Voltar" />
+
+    <Button layoutX="386.0" layoutY="219.0" mnemonicParsing="false" onAction="#endereco" styleClass="buttonMain" text="Endereço" />
+
+    <TextField fx:id="tfNomeCadastrarCliente" layoutX="69.0" layoutY="163.0" promptText="Nome" styleClass="input" />
+    <TextField fx:id="tfEmailCadastrarCliente" layoutX="69.0" layoutY="239.0" promptText="Email" styleClass="input" />
+
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" style="-fx-background-color: black;">
+
+        <Hyperlink layoutX="700.0" layoutY="65.0" onAction="#cadastrarFuncionario" styleClass="linkMenu" text="Cadastrar Funcionario" />
+
+        <Hyperlink layoutX="1044.0" layoutY="65.0" onAction="#voltar" styleClass="linkMenu" text="Voltar" />
+
+        <TextField fx:id="tfPesquisarFuncionario" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar Funcionario" styleClass="tfPesquisa" />
+
+    </Pane>
+
+    <ListView fx:id="listViewFuncionarios" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0" />
+
+    <Group layoutX="709.0" layoutY="571.0">
+
+        <Button mnemonicParsing="false" onAction="#excluirFuncionario" styleClass="buttonMain" text="Excluir" />
+
+        <Button layoutX="198.0" mnemonicParsing="false" onAction="#editarFuncionario" styleClass="buttonMain" text="Editar" />
+
+    </Group>
+    
+    <Pane layoutX="672.0" layoutY="273.0" prefHeight="248.0" prefWidth="364.0" styleClass="pane">
+
+        <Label fx:id="labelNomeFuncionarioSelecionado" layoutX="14.0" layoutY="27.0" text="Nome: " />
+        <Label fx:id="labelEmailFuncionarioSelecionado" layoutX="14.0" layoutY="73.0" text="Email: " />
+        <Label fx:id="labelCidadeFuncionarioSelecionado" layoutX="14.0" layoutY="116.0" text="Cidade: " />
+        <Label fx:id="labelUfFuncionarioSelecionado" layoutX="14.0" layoutY="159.0" text="UF: " />
+        <Label fx:id="labelCepFuncionarioSelecionado" layoutX="14.0" layoutY="202.0" text="CEP: " />
+
+    </Pane>
+
+</AnchorPane>

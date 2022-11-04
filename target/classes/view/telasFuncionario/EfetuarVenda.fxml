@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" styleClass="paneMenu">
+
+        <Hyperlink layoutX="700.0" layoutY="65.0" onAction="#visualizarPedido" styleClass="linkMenu" text="Visualizar pedido" textFill="WHITE" />
+
+        <Hyperlink layoutX="1044.0" layoutY="65.0" onAction="#voltar" styleClass="linkMenu" text="Voltar" textFill="WHITE" />
+
+        <TextField fx:id="tfPesquisarProduto" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar produto" styleClass="tfPesquisa" />
+
+    </Pane>
+
+    <ListView fx:id="listViewProdutos" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0" />
+
+    <Button layoutX="638.0" layoutY="587.0" mnemonicParsing="false" onAction="#adicionarAoPedido" prefHeight="111.0" prefWidth="190.0" styleClass="buttonMain" text="Adicionar ao pedido" wrapText="true" />
+
+    <Button layoutX="881.0" layoutY="587.0" mnemonicParsing="false" onAction="#concluirPedido" prefHeight="111.0" prefWidth="190.0" styleClass="buttonMain" text="Finalizar pedido" wrapText="true" />
+    
+    <Pane layoutX="672.0" layoutY="371.0" prefHeight="189.0" prefWidth="364.0" styleClass="pane">
+
+        <Label fx:id="labelNomeProdutoSelecionado" layoutX="14.0" layoutY="17.0" text="Nome: " />
+        <Label fx:id="labelCategoriaProdutoSelecionado" layoutX="14.0" layoutY="62.0" text="Categoria: " />
+        <Label fx:id="labelPrecoDeVendaProdutoSelecionado" layoutX="14.0" layoutY="108.0" text="Preço de venda: " />
+        <Label fx:id="labelQuantidadeProdutoSelecionado" layoutX="14.0" layoutY="149.0" text="Quantidade: " />
+
+    </Pane>
+
+   <Pane layoutX="675.0" layoutY="226.0" prefHeight="59.0" prefWidth="337.0" styleClass="pane">
+
+        <Label fx:id="labelNomeCliente" layoutX="2.0" layoutY="18.0" text="Cliente: " />
+
+   </Pane>
+
+   <Button layoutX="721.0" layoutY="296.0" mnemonicParsing="false" onAction="#selecionarCliente" styleClass="buttonMain" text="Selecionar cliente" />
+
+</AnchorPane>

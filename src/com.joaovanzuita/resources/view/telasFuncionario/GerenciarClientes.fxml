@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" styleClass="paneMenu">
+
+        <Hyperlink layoutX="700.0" layoutY="65.0" onAction="#cadastrarCliente" styleClass="linkMenu" text="Cadastrar Cliente" textFill="WHITE" />
+
+        <Hyperlink layoutX="1044.0" layoutY="65.0" onAction="#voltar" styleClass="linkMenu" text="Voltar" textFill="WHITE" />
+
+        <TextField fx:id="tfPesquisarCliente" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar Cliente" styleClass="tfPesquisa" />
+
+    </Pane>
+
+    <ListView fx:id="listViewClientes" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0" />
+
+   <Group layoutX="698.0" layoutY="571.0">
+
+          <Button mnemonicParsing="false" onAction="#excluirCliente" styleClass="buttonMain" text="Excluir" />
+      
+          <Button layoutX="198.0" mnemonicParsing="false" onAction="#editarCliente" styleClass="buttonMain" text="Editar" />
+
+   </Group>
+
+   <Pane layoutX="672.0" layoutY="273.0" prefHeight="248.0" prefWidth="364.0" styleClass="pane">
+
+         <Label fx:id="labelNomeClienteSelecionado" layoutX="14.0" layoutY="27.0" text="Nome:" />
+         <Label fx:id="labelEmailClienteSelecionado" layoutX="14.0" layoutY="74.0" text="Email:" />
+         <Label fx:id="labelCidadeClienteSelecionado" layoutX="14.0" layoutY="116.0" text="Cidade:" />
+         <Label fx:id="labelUfClienteSelecionado" layoutX="14.0" layoutY="158.0" text="UF:" />
+         <Label fx:id="labelCepClienteSelecionado" layoutX="14.0" layoutY="202.0" text="CEP:" />
+
+   </Pane>
+
+</AnchorPane>

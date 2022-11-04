@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" style="-fx-background-color: black;">
+
+        <Hyperlink styleClass="linkMenu" layoutX="700.0" layoutY="65.0" text="Cadastrar Categoria" onAction="#cadastrarCategoria" />
+
+        <Hyperlink styleClass="linkMenu" layoutX="1044.0" layoutY="65.0" text="Voltar" onAction="#voltar"/>
+
+
+        <TextField fx:id="tfPesquisarCategoria" styleClass="tfPesquisa" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0"
+                   promptText="Pesquisar Categorias"/>
+
+    </Pane>
+
+    <ListView fx:id="listViewCategorias" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0"/>
+
+    <Button styleClass="buttonMain" layoutX="803.0" layoutY="357.0" mnemonicParsing="false" text="Excluir" onAction="#excluirCategoria"/>
+
+    <Button styleClass="buttonMain" layoutX="803.0" layoutY="493.0" mnemonicParsing="false" text="Editar" onAction="#editarCategoria"/>
+
+</AnchorPane>

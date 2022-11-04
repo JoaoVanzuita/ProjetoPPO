@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="738" prefWidth="1200" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="160.0" prefWidth="1200.0" styleClass="paneMenu">
+
+        <Hyperlink layoutX="700.0" layoutY="65.0" onAction="#visualizarPedido" styleClass="linkMenu" text="Visualizar pedido" />
+
+        <Hyperlink layoutX="1044.0" layoutY="65.0" onAction="#voltar" styleClass="linkMenu" text="Voltar" />
+
+        <TextField fx:id="tfPesquisarProduto" layoutX="99.0" layoutY="55.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar produto" styleClass="tfPesquisa" />
+
+    </Pane>
+
+    <ListView fx:id="listViewProdutos" layoutX="163.0" layoutY="251.0" prefHeight="382.0" prefWidth="320.0" />
+
+    <Button layoutX="638.0" layoutY="587.0" mnemonicParsing="false" onAction="#adicionarAoPedido" prefHeight="111.0" prefWidth="190.0" styleClass="buttonMain" text="Adicionar ao pedido" wrapText="true" />
+
+    <Button layoutX="881.0" layoutY="587.0" mnemonicParsing="false" onAction="#concluirPedido" prefHeight="111.0" prefWidth="190.0" styleClass="buttonMain" text="Finalizar pedido" wrapText="true" />
+
+    <Pane layoutX="661.0" layoutY="284.0" prefHeight="230.0" prefWidth="364.0" styleClass="pane">
+
+        <Label fx:id="labelNomeProdutoSelecionado" layoutX="14.0" layoutY="23.0" text="Nome: " />
+        <Label fx:id="labelCategoriaProdutoSelecionado" layoutX="14.0" layoutY="65.0" text="Categoria: " />
+        <Label fx:id="labelPrecoDeVendaProdutoSelecionado" layoutX="14.0" layoutY="108.0" text="Preço de venda: " />
+        <Label fx:id="labelPrecoDeCustoProdutoSelecionado" layoutX="14.0" layoutY="148.0" text="Preço de custo: " />
+        <Label fx:id="labelQuantidadeProdutoSelecionado" layoutX="14.0" layoutY="187.0" text="Quantidade: " />
+
+    </Pane>
+
+</AnchorPane>

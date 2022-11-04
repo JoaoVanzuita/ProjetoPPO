@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="586.0" prefWidth="774.0" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="135.0" prefWidth="774.0" styleClass="paneMenu">
+
+        <TextField fx:id="tfPesquisarCliente" layoutX="244.0" layoutY="36.0" prefHeight="59.0" prefWidth="277.0" promptText="Pesquisar Cliente" styleClass="tfPesquisa" />
+
+    </Pane>
+
+    <ListView fx:id="listViewClientes" layoutX="37.0" layoutY="157.0" prefHeight="382.0" prefWidth="320.0" />
+
+    <Pane layoutX="374.0" layoutY="159.0" prefHeight="248.0" prefWidth="364.0" styleClass="pane">
+
+        <Label fx:id="labelNomeClienteSelecionado" layoutX="14.0" layoutY="29.0" text="Nome:" />
+        <Label fx:id="labelEmailClienteSelecionado" layoutX="14.0" layoutY="75.0" text="Email:" />
+        <Label fx:id="labelCidadeClienteSelecionado" layoutX="14.0" layoutY="117.0" text="Cidade:" />
+        <Label fx:id="labelUfClienteSelecionado" layoutX="14.0" layoutY="158.0" text="UF:" />
+        <Label fx:id="labelCepClienteSelecionado" layoutX="14.0" layoutY="202.0" text="CEP:" />
+
+    </Pane>
+
+    <Group layoutX="448.0" layoutY="472.0">
+
+        <Button layoutX="-38.0" layoutY="5.0" mnemonicParsing="false" onAction="#selecionar" styleClass="buttonMain" text="Selecionar" />
+
+        <Hyperlink layoutX="154.0" layoutY="9.0" onAction="#voltar" styleClass="linkVoltar" text="Voltar" />
+
+    </Group>
+
+</AnchorPane>

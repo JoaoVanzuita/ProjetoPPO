@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="612.0" prefWidth="603.0" styleClass="mainPane" stylesheets="@../../css/Application.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+    <Pane prefHeight="135.0" prefWidth="603.0" styleClass="paneMenu">
+
+        <Label layoutX="241.0" layoutY="37.0" styleClass="labelPrincipalMenu" text="Produto" />
+
+    </Pane>
+
+    <TextField fx:id="tfNomeProduto" layoutX="23.0" layoutY="163.0" prefHeight="51.0" prefWidth="265.0" promptText="Nome" styleClass="input" />
+    <TextField fx:id="tfPrecoDeCustoProduto" layoutX="314.0" layoutY="163.0" prefHeight="51.0" prefWidth="265.0" promptText="Preço de custo (R$)" styleClass="input" />
+
+    <Label fx:id="labelCategoria" layoutX="66.0" layoutY="254.0" text="Categoria: " />
+    <Label fx:id="labelFornecedor" layoutX="334.0" layoutY="254.0" text="Fornecedor: " />
+
+    <Group layoutX="66.0" layoutY="303.0">
+
+        <ListView fx:id="listViewCategoriasProduto" prefHeight="200.0" prefWidth="200.0" />
+
+        <ListView fx:id="listViewFornecedoresProduto" layoutX="268.0" prefHeight="200.0" prefWidth="200.0" />
+
+    </Group>
+
+    <Button layoutX="177.0" layoutY="530.0" mnemonicParsing="false" onAction="#salvarProduto" styleClass="buttonMain" text="Salvar" />
+    <Hyperlink layoutX="310.0" layoutY="534.0" onAction="#voltar" styleClass="linkVoltar" text="Voltar" />
+
+</AnchorPane>
