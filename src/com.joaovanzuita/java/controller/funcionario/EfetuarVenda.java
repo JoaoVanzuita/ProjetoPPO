@@ -102,6 +102,11 @@ public class EfetuarVenda implements Initializable {
 
     private void selecionarProduto(Produto produto){
 
+        labelNomeProdutoSelecionado.setText("Nome: ");
+        labelCategoriaProdutoSelecionado.setText("Categoria: ");
+        labelPrecoDeVendaProdutoSelecionado.setText("Preço de venda: ");
+        labelQuantidadeProdutoSelecionado.setText("Quantidade: ");
+
         if (produto != null) {
 
             this.produto = produto;
@@ -111,14 +116,7 @@ public class EfetuarVenda implements Initializable {
             labelPrecoDeVendaProdutoSelecionado.setText(labelPrecoDeVendaProdutoSelecionado.getText() + "R$ " + decimalFormat.format(produto.getPrecoDeVenda()));
             labelQuantidadeProdutoSelecionado.setText(labelQuantidadeProdutoSelecionado.getText() + produto.getQuantidade());
 
-            return;
         }
-
-        labelNomeProdutoSelecionado.setText("Nome: ");
-        labelCategoriaProdutoSelecionado.setText("Categoria: ");
-        labelPrecoDeVendaProdutoSelecionado.setText("Preço de venda: ");
-        labelQuantidadeProdutoSelecionado.setText("Quantidade: ");
-
     }
 
     public void selecionarCliente(){

@@ -110,22 +110,23 @@ public class EfetuarCompra implements Initializable {
 
     private void selecionarProduto(Produto produto){
 
+        labelNomeProdutoSelecionado.setText("Nome: ");
+        labelCategoriaProdutoSelecionado.setText("Categoria: ");
+        labelPrecoDeCustoProdutoSelecionado.setText("Preço de custo: ");
+        labelPrecoDeVendaProdutoSelecionado.setText("Preço de venda: ");
+        labelQuantidadeProdutoSelecionado.setText("Quantidade: ");
+
         if (produto != null) {
 
             this.produto = produto;
 
             labelNomeProdutoSelecionado.setText(labelNomeProdutoSelecionado.getText() + produto.getNome());
             labelCategoriaProdutoSelecionado.setText(labelCategoriaProdutoSelecionado.getText() + produto.getCategoria().getNome());
+            labelPrecoDeCustoProdutoSelecionado.setText(labelPrecoDeCustoProdutoSelecionado.getText() + "R$ " + decimalFormat.format(produto.getPrecoDeCusto()));
             labelPrecoDeVendaProdutoSelecionado.setText(labelPrecoDeVendaProdutoSelecionado.getText() + "R$ " + decimalFormat.format(produto.getPrecoDeVenda()));
             labelQuantidadeProdutoSelecionado.setText(labelQuantidadeProdutoSelecionado.getText() + produto.getQuantidade());
 
-            return;
         }
-
-        labelNomeProdutoSelecionado.setText("Nome: ");
-        labelCategoriaProdutoSelecionado.setText("Categoria: ");
-        labelPrecoDeVendaProdutoSelecionado.setText("Preço de venda: ");
-        labelQuantidadeProdutoSelecionado.setText("Quantidade: ");
 
     }
 

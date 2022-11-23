@@ -83,6 +83,12 @@ public class SelecionarClienteDialog implements Initializable {
 
     private void selecionarCliente(Cliente cliente) {
 
+        labelNomeClienteSelecionado.setText("Nome: ");
+        labelEmailClienteSelecionado.setText("Email: ");
+        labelCidadeClienteSelecionado.setText("Cidade: ");
+        labelUfClienteSelecionado.setText("UF: ");
+        labelCepClienteSelecionado.setText("CEP: ");
+
         if(cliente != null) {
 
             this.cliente = cliente;
@@ -93,15 +99,7 @@ public class SelecionarClienteDialog implements Initializable {
             labelUfClienteSelecionado.setText(labelUfClienteSelecionado.getText() + cliente.getEndereco().getUf());
             labelCepClienteSelecionado.setText(labelCepClienteSelecionado.getText() + cliente.getEndereco().getCep());
 
-            return;
-
         }
-
-        labelNomeClienteSelecionado.setText("Nome: ");
-        labelEmailClienteSelecionado.setText("Email: ");
-        labelCidadeClienteSelecionado.setText("Cidade: ");
-        labelUfClienteSelecionado.setText("UF: ");
-        labelCepClienteSelecionado.setText("CEP: ");
     }
 
     public void selecionar(ActionEvent actionEvent){
