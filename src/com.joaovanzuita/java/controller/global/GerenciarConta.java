@@ -164,11 +164,11 @@ public class GerenciarConta implements Initializable {
             return false;
         }
 
-        if (pfSenhaUsuario.getText().trim().length() != 8){
+        if (pfSenhaUsuario.getText().trim().length() < 8){
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText("Entrada inválida.");
-            alert.setContentText("Senha deve ter 8 caracteres.");
+            alert.setContentText("Senha deve ter pelo menos 8 caracteres.");
             alert.showAndWait();
 
             return false;

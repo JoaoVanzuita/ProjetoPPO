@@ -37,11 +37,11 @@ public class Login{
         Stage stage = (Stage) node.getScene().getWindow();
         Parent root;
 
-//        if (!validarCampos()){
-//
-//            return;
-//
-//        }
+        if (!validarCampos()){
+
+            return;
+
+        }
 
         String email = tfEmail.getText().trim();
         String senha = pfSenha.getText().trim();
@@ -135,11 +135,11 @@ public class Login{
             return false;
         }
 
-        if (pfSenha.getText().trim().length() != 8 && pfSenha.getText().trim().length() != 0){
+        if (pfSenha.getText().trim().length() < 8 && pfSenha.getText().trim().length() > 0){
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Entrada inválida.");
-            alert.setContentText("Senha deve ter 0 (ainda não criada) ou 8 caracteres.");
+            alert.setContentText("Senha deve ter 0 (ainda não criada) ou pelo menos 8 caracteres.");
             alert.showAndWait();
 
             return false;
