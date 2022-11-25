@@ -202,7 +202,7 @@ public class ReportFactory {
 
             Connection connection = ConnectionFactory.getConnection();
 
-            jasperPrint = JasperFillManager.fillReport("src/com.joaovanzuita/resources/reports/movimentacoesFinanceiras.jasper", param, connection);
+            jasperPrint = JasperFillManager.fillReport("src/com.joaovanzuita/resources/reports/MovimentacoesFinanceiras.jasper", param, connection);
 
             connection.close();
 

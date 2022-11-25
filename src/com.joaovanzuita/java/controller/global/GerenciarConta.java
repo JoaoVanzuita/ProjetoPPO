@@ -128,7 +128,7 @@ public class GerenciarConta implements Initializable {
 
         Pattern email = Pattern.compile("\\b[\\w.%-]+@[-.\\w]+\\.[A-Za-z]{2,4}\\b");
         Pattern senha = Pattern.compile("[^\\W_]*");
-        Pattern nome = Pattern.compile("^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\\s]+$\n");
+        Pattern nome = Pattern.compile("^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ'\\s]*");
 
         Matcher matcherEmail = email.matcher(tfEmailUsuario.getText().trim());
         Matcher matcherSenha = senha.matcher(pfSenhaUsuario.getText().trim());
